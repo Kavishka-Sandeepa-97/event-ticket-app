@@ -1,5 +1,5 @@
 
-import express, { response } from "express"
+import express from "express"
 import { prisma } from "../prisma.js";
 import bcrypt from "bcryptjs";
 import { authorizeRole, generateAccessToken, generateRefreshToken, verifyAuthorization } from "../jwt/util.mjs";
