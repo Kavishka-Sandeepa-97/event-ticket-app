@@ -54,7 +54,9 @@ model Event {
   date        DateTime
   location    String
   isTicket    Boolean
-  prices      Float 
+  initialTickets    Int?
+  currentTickets    Int?
+  prices      Float?
   status      EventStatus  @default(UPCOMING)
   image       String?
 
